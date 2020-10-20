@@ -1,6 +1,11 @@
 # wellness-check-bot
 This is a simple Rasa bot that uses a form to create a daily log of health information.
 
+All the trained model is store in the model folder, if there has no model folder please mkdir one. 
+And train follow commods
+
+Note, all new added samples also re-train the RASA model. 
+
 ## Running the assistant
 1. Install Rasa Open Source: https://rasa.com/docs/rasa/user-guide/installation/
 2. Train the model:
@@ -11,11 +16,6 @@ This is a simple Rasa bot that uses a form to create a daily log of health infor
 
 ``rasa run actions``
 
-4. Return to the first terminal window and start the assistant on the command line:
-
-``rasa shell``
+4. Return to telegram and start the assistant on the command line:
 
 ``rasa run --por5005 --credentials credentials.yml``
-
-
-![wellness-bot-conversation](https://github.com/karen-white/wellness-check-bot/blob/master/images/bot_conversation.png?raw=true)
